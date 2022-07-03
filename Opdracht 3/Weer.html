@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Het weer</title>
+    <script src="Weer.js" async></script>
+    <link rel="stylesheet" href="Weer.css">
+</head>
+<body>
+<h1> Het weer voor deze week</h1>
+<table id="table" width="100%" border="1" align="center"> 
+    <tr>
+        <td>
+        <th >Vandaag:</th>
+        <th>Morgen:</th>
+        <th>Overmorgen:</th>
+        <th>Daarna:</th>
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <td align="center"><img src="./Icons/Bewolkt.png" alt="Bewolkt" width="50" ></td>
+        <td align="center"><img src="./Icons/Zwaar bewolkt.png" alt="Zwaar bewolkt" width="50"></td>
+        <td align="center"><img src="./Icons/Regenachtig.png" alt="Regenachtig" width="50" ></td>
+        <td align="center"><img src="./Icons/Zonnig.png" alt="Zonnig" width="50" ></td>
+    </tr>
+    <tr class="minimum">
+            <td align="right">Minimum <br>temperatuur<br></td>
+            <td>7 graden </td>
+            <td>5 graden</td>
+            <td>10 graden</td>
+            <td>15 graden</td>            
+    </tr>
+    <tr class="minimum">
+            <td class="ewa" align="right" >Maximum <br>temperatuur</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td> 
+    <tr>
+        <td align="right" >Wind:</td>        
+        <td align="left" colspan="4">Deze week geen wind van betekenis.</td>      
+    </tr>    
+</table>
+<table><td><br></td></table>
+<h3 onclick="myFunction()">Weersverwachtingen...<br></h3>
+    <div id="myDIV">
+        <p>Vandaag is het nog <u>erg nat</u>, maar vanaf morgen breekt de zon weer door en wordt het geleidelijk aan beter. Op sommige plaatsen zal het morgen al de hele dag droog zijn.</p>
+        <br>Lees hier de uitgebreide weersverwachtingen
+        <ul style="list-style-image:url(./Icons/Zonnigklein.png);">
+            <li> Het <a href="https://www.knmi.nl/nederland-nu/weer/verwachtingen">KNMI weerbericht</a></li>
+            <li>Het <a href="https://nos.nl/weer/">Nos weerbericht</a></li>
+            <li>Het weer volgens<a href="https://www.buienradar.nl/">buienradar.nl</a></li>
+        </ul>
+    </div> 
+<h1 class="actueel">Onze actuele neerslagradar:</h1>
+<a href="weerslag.html" target="_blank"><img border="0" src="https://neerslagradar.weerslag.nl/zoom_uit_loop.php?id=653&v=80196519" width="500" height="500" /></a>
+<p>Bekijk <a href="weerslag.html" target="_blank"><u>hier</u></a> het weer voor de komende uren.</p>
+</body>
+</html>
